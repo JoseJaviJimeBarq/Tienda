@@ -1,7 +1,2 @@
 # Tienda
-<<<<<<< HEAD
-=======
-xD	s
->>>>>>> 6e6ecb11e28db3ac6c38001bb493ee20386589bd
-
-illoo marisa que ahces tia?
+Illo si darwin un dia dijo, "MARICONES LOS QUE DIGAN HEY", pero nadie dije hey? por que ella no me quiere?
