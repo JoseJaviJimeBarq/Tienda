@@ -1,3 +1,4 @@
+drop table if exists clientes;
 CREATE TABLE `clientes` (
  `DNI` VARCHAR(9) NOT NULL ,
  `nombre` VARCHAR(100) NOT NULL ,
