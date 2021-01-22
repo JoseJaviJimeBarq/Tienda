@@ -25,4 +25,4 @@ ALTER TABLE `productos` ADD PRIMARY KEY (`cod`);
 ALTER TABLE `productos` MODIFY `cod` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
-Una vez hecho, ya nos podremos ir al index.html, y poder movernos por la pagina.
+Una vez hecho, tendriamos que meter la carpeta html y php, junto al index.html y style.css en la siguiente ruta: /var/www/html. Asi podremos movernos por la página, poder añadir datos, y buscarlos
