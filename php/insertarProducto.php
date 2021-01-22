@@ -1,12 +1,14 @@
 <?php
 $servername = "localhost";
-$database = "pruebas";
 $username = "php";
 $password = "1234";
+$database = "pruebas";
 
-$codigo = $_POST['codigo'];
+
+$cod = $_POST['cod'];
 $descripcion = $_POST['descripcion'];
 $precio = $_POST['precio'];
+$stock = $_POST['stock'];
 
 // Create connection
 $mysqli_link = mysqli_connect($servername, $username, $password, $database);
@@ -18,7 +20,7 @@ if (!$mysqli_link) {
         echo "Connected successfully<br>";
 }
 
-$insert_query = "INSERT INTO productos(cod, descripcion, precio) VALUES ('$codigo', '$descripcion', '$precio');";
+$insert_query = "INSERT INTO productos(cod, descripcion, precio, stock) VALUES ('$cod', '$descripcion', '$precio', '$stock');";
 
 // run the insert query
 If ($mysqli_link->query($insert_query) === TRUE) {

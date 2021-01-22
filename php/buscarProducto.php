@@ -2,33 +2,35 @@
 $servername = "localhost";
 $username = "php";
 $password = "1234";
-$dbname = "pruebas";
+$database = "pruebas";
 
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+
+$conn = new mysqli($servername, $username, $password, $database);
 
 if ($conn->connect_error) {
 	die("Ha habido un fallo " . $conn->connect_error);
 }
 
-$op=$_POST["tipo"];
-$busqueda=$_POST["busqueda"];
+$op=$_GET["tipo"];
+$busqueda=$_GET["busqueda"];
 $sql="SELECT * from productos WHERE";
 
-if ($_POST["tipo"]=="cod")
+if ($_GET["tipo"]=="cod")
 {
 
-	$sql = $sql." cod=$busqueda";
+	$sql = $sql." cod like '%$busqueda%'";
 
 
-} elseif ($_POST["tipo"]=="desc") {
+} elseif ($_GET["tipo"]=="desc") {
 	$sql = $sql." descripcion like '%$busqueda%'";
 
 
-} elseif ($_POST["tipo"]=="pre") {
-	$sql = "SELECT * from productos WHERE precio=$busqueda";
+} elseif ($_GET["tipo"]=="desc") {
+	$sql = $sql." precio like '%$busqueda%'";
 
-} elseif ($_POST["tipo"]=="stock") {
+
+} elseif ($_GET["tipo"]=="stock") {
 	$sql = $sql." stock like '%$busqueda%'";
 
  }
