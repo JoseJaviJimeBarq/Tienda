@@ -1,34 +1,35 @@
 <?php
+
+
+require 'productos.php';
+
+// Variables
 $servername = "localhost";
 $username = "php";
 $password = "1234";
 $database = "pruebas";
 
 
+// Establecer conexión con la base de datos y verificar la conexión
+$conn = new mysqli($servername, $username, $password, $database);
+
+if ($conn->connect_error) {
+    die("Error de conexión: ".$conn->connect_error);
+}
+
+// Datos del formulario
 $cod = $_POST['cod'];
 $descripcion = $_POST['descripcion'];
 $precio = $_POST['precio'];
 $stock = $_POST['stock'];
 
-// Create connection
-$mysqli_link = mysqli_connect($servername, $username, $password, $database);
+// Creación de nuevo objeto Producto
+$productoNuevo = new Producto($cod,$descripcion,$precio,$stock);
 
-// Check connection
-if (!$mysqli_link) {
-        die("Connection failed: " . mysqli_connect_error());
-} else {
-        echo "Connected successfully<br>";
-}
+// Inserción del Producto en la BBDD
+$productoNuevo->insertarProducto($conn);
 
-$insert_query = "INSERT INTO productos(cod, descripcion, precio, stock) VALUES ('$cod', '$descripcion', '$precio', '$stock');";
 
-// run the insert query
-If ($mysqli_link->query($insert_query) === TRUE) {
-    echo 'Record inserted successfully.';
-} else {
-  echo "Connection failed: " .$insert_query. "<br>" . $mysqli_link->error;
-}
+$conn->close();
 
-// close the db connection
-mysqli_close($mysqli_link);
 ?>
