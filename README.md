@@ -5,4 +5,4 @@
 
 22/01/2021: Jose Javier Y Alejando Solero terminaron el HTML con CSS y comprobaron que todo funcionara correctamente.
 
-05/02/2021: Lo hicimos entre todos, es decir, quedamos todos juntos y fuimos haciendo archivo por archivo a la vez. 
+05/02/2021: Lo hicimos entre todos, es decir, quedamos todos juntos y fuimos haciendo archivo por archivo a la vez. Despues de encontrar el fallo en el buscarProducto.php, Javier Botella lo arreglo y comprobo que funcionaba correctamente
