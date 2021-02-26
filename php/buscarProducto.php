@@ -30,22 +30,3 @@ $productoExistente->buscarProducto($busqueda,$op,$conn);
 $conn->close();
 
 ?>
-
-
-
-$result = $conn->query($sql);
-
-
-if($result->num_rows > 0){
-	while ($row = $result->fetch_assoc()){
-		echo " <br> Codigo Producto : " . $row["cod"] . " <br> Descripcion: " . $row["descripcion"] . " <br> Precio: " . $row["precio"] . "<br> Stock : " . $row["stock"];
-
-	}
-}
-
-else {
-	echo "Hay 0 resultados";
-}
-
-$conn->close();
-?>
