@@ -1,14 +1,15 @@
 <?php
 
 
+
+
 require 'productos.php';
 
-// Variables
+//Variables
 $servername = "localhost";
 $username = "php";
 $password = "1234";
 $database = "pruebas";
-
 
 // Establecer conexión con la base de datos y verificar la conexión
 $conn = new mysqli($servername, $username, $password, $database);
@@ -23,6 +24,7 @@ $descripcion = $_POST['descripcion'];
 $precio = $_POST['precio'];
 $stock = $_POST['stock'];
 
+
 // Creación de nuevo objeto Producto
 $productoNuevo = new Producto($cod,$descripcion,$precio,$stock);
 
@@ -31,5 +33,6 @@ $productoNuevo->insertarProducto($conn);
 
 
 $conn->close();
+
 
 ?>
