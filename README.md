@@ -12,3 +12,6 @@ JavierBotella-26/02/2021: Despues de encontrar el fallo en el buscarProducto.php
 Eugenio-26/02/2021: Tras terminar Javier el buscarProducto.php, Eugenio comprobo si habia errores y ajusto para mejor el insertarProducto.php de forma que no tuviera errores y que tuviera buena estructura.
 
 Alejandro Solero-26/02/2021: He estado ayudando a eugenio a cambiar el insertarProducto.php y luego el me ha ayudado a arreglar un fallo que habia en el insertarCliente.php
+
+Alejandro Solero-01/02/2021: Alejandro Solero y Eugenio han hecho el fichero de ClassProductoTest.php comprobando que todo esta correctamente.
+
