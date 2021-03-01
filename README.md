@@ -18,3 +18,5 @@ Alejandro Solero-01/03/2021: Alejandro Solero y Eugenio han hecho el fichero de 
 Jose Javier-01/03/2021: Jose Javier Y Javier Botella han hecho el fichero de ClassClienteTest.php, comprobando que esté todo correctamente.
 
 (Para instalar el phpunit, se usar el siguiente comando: "composer require --dev phpunit/phpunit ^7", ya que usamos otra version, para ser concretos, la 9 y daba fallo)
+
+Alejandro Solero-01/03/2021: Ajuste de ultima hora

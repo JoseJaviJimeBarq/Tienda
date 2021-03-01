@@ -103,7 +103,7 @@ $sql = "INSERT INTO clientes (DNI,nombre,apellidos,email,fecha_nacimiento) VALUE
             echo "  <br> DNI: " . $row["DNI"] . " <br> Nombre : " . $row["nombre"] . " <br> Apellido: " . $row["apellidos"] . " <br> Email : " . $row["email"] . "<br> Fecha : " . $row["fecha_nacimiento"] . "<br>";
           }
         }else{
-          echo "Hay 0 resultados.";
+          return null;
         }
 
 

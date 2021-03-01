@@ -45,7 +45,7 @@ class ClienteTest extends \PHPUnit\Framework\TestCase
         $clientesAntes = $resultado->num_rows;
 
 
-        $clienteNuevo = new Cliente("prueba22", "prueba", "prueba", "miasda@gmail.com", "2023-03-04");
+        $clienteNuevo = new Cliente("prueba222", "prueba", "prueba", "miassda@gmail.com", "2023-03-04");
 
         $clienteNuevo->darAlta($conn);
 
