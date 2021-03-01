@@ -13,5 +13,8 @@ Eugenio-26/02/2021: Tras terminar Javier el buscarProducto.php, Eugenio comprobo
 
 Alejandro Solero-26/02/2021: He estado ayudando a eugenio a cambiar el insertarProducto.php y luego el me ha ayudado a arreglar un fallo que habia en el insertarCliente.php
 
-Alejandro Solero-01/02/2021: Alejandro Solero y Eugenio han hecho el fichero de ClassProductoTest.php comprobando que todo esta correctamente.
+Alejandro Solero-01/03/2021: Alejandro Solero y Eugenio han hecho el fichero de ClassProductoTest.php comprobando que todo esta correctamente.
 
+Jose Javier-01/03/2021: Jose Javier Y Javier Botella han hecho el fichero de ClassClienteTest.php, comprobando que esté todo correctamente.
+
+(Para instalar el phpunit, se usar el siguiente comando: "composer require --dev phpunit/phpunit ^7", ya que usamos otra version, para ser concretos, la 9 y daba fallo)
