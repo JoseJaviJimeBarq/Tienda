@@ -18,6 +18,7 @@ $conn = new mysqli($servername, $username, $password, $database);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
+
 $DNI = $_POST['DNI'];
 $nombre = $_POST['nombre'];
 $apellidos = $_POST['apellidos'];
@@ -25,7 +26,9 @@ $email = $_POST['email'];
 $fecha_nacimiento = $_POST['fecha_nacimiento'];
 
 $clienteNuevo = new Cliente($DNI,$nombre,$apellidos,$email,$fecha_nacimiento);
+
 $clienteNuevo->darAlta($conn);
+
 $conn->close();
 
 ?>
