@@ -18,6 +18,9 @@
 --
 -- Table structure for table `clientes`
 --
+drop database if exists `pruebas`;
+create database pruebas;
+use pruebas;
 
 DROP TABLE IF EXISTS `clientes`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
